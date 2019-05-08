@@ -7,8 +7,9 @@
 //
 
 #import "ViewController.h"
+#import "ProjectCtlTableViewCell.h"
 
-@interface ViewController ()
+@interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
 
 @end
 
@@ -16,12 +17,28 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark - UITableViewDataSource
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return 10;
+}
+
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 100;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    ProjectCtlTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ProjectCtlTableViewCell"];
+//    if (!cell) {
+//        cell = [[NSBundle mainBundle]loadNibNamed:@"ProjectCtlTableViewCell" owner:self options:nil].lastObject;
+//    }
+    [cell refreshProjectUI:indexPath.row+50];
+    return cell;
 }
 
 @end

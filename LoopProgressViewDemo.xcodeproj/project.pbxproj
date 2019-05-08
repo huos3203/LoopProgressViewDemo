@@ -13,6 +13,8 @@
 		98503F231D88129A00EE0EAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98503F211D88129A00EE0EAD /* Main.storyboard */; };
 		98503F251D88129A00EE0EAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98503F241D88129A00EE0EAD /* Assets.xcassets */; };
 		98503F281D88129A00EE0EAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98503F261D88129A00EE0EAD /* LaunchScreen.storyboard */; };
+		98503F321D8812AB00EE0EAD /* ProjectCtlTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 98503F301D8812AB00EE0EAD /* ProjectCtlTableViewCell.m */; };
+		98503F361D88133D00EE0EAD /* LoopProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 98503F351D88133D00EE0EAD /* LoopProgressView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		98503F241D88129A00EE0EAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		98503F271D88129A00EE0EAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		98503F291D88129A00EE0EAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98503F2F1D8812AB00EE0EAD /* ProjectCtlTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectCtlTableViewCell.h; sourceTree = "<group>"; };
+		98503F301D8812AB00EE0EAD /* ProjectCtlTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectCtlTableViewCell.m; sourceTree = "<group>"; };
+		98503F341D88133D00EE0EAD /* LoopProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoopProgressView.h; sourceTree = "<group>"; };
+		98503F351D88133D00EE0EAD /* LoopProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoopProgressView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +68,10 @@
 				98503F1C1D88129A00EE0EAD /* AppDelegate.m */,
 				98503F1E1D88129A00EE0EAD /* ViewController.h */,
 				98503F1F1D88129A00EE0EAD /* ViewController.m */,
+				98503F2F1D8812AB00EE0EAD /* ProjectCtlTableViewCell.h */,
+				98503F301D8812AB00EE0EAD /* ProjectCtlTableViewCell.m */,
+				98503F341D88133D00EE0EAD /* LoopProgressView.h */,
+				98503F351D88133D00EE0EAD /* LoopProgressView.m */,
 				98503F211D88129A00EE0EAD /* Main.storyboard */,
 				98503F241D88129A00EE0EAD /* Assets.xcassets */,
 				98503F261D88129A00EE0EAD /* LaunchScreen.storyboard */,
@@ -110,7 +120,7 @@
 				TargetAttributes = {
 					98503F141D88129A00EE0EAD = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = TMTYR7FVY6;
+						DevelopmentTeam = C556M74S8M;
 					};
 				};
 			};
@@ -119,6 +129,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -150,7 +161,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98503F361D88133D00EE0EAD /* LoopProgressView.m in Sources */,
 				98503F201D88129A00EE0EAD /* ViewController.m in Sources */,
+				98503F321D8812AB00EE0EAD /* ProjectCtlTableViewCell.m in Sources */,
 				98503F1D1D88129A00EE0EAD /* AppDelegate.m in Sources */,
 				98503F1A1D88129A00EE0EAD /* main.m in Sources */,
 			);
@@ -262,6 +275,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = C556M74S8M;
 				INFOPLIST_FILE = LoopProgressViewDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ce.LoopProgressViewDemo;
@@ -273,6 +287,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = C556M74S8M;
 				INFOPLIST_FILE = LoopProgressViewDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ce.LoopProgressViewDemo;
@@ -299,6 +314,7 @@
 				98503F2E1D88129A00EE0EAD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
